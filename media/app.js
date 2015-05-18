@@ -6,7 +6,7 @@ var autoApp = angular.module('auti', [
   'auti.view1',
   'auti.view2',
   'auti.menu',
-  
+  'auti.alert',
 ]);
 
 autoApp.config(['$routeProvider', function($routeProvider) {
