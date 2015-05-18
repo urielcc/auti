@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="auti" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Auti</title>
+    <link href="bower_components/materialize/dist/css/materialize.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+     <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#/view1">Sass</a></li>
+        <li><a href="#/view2">Components</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+      <div ng-view></div>
+
+    <div id="alert" ng-controller="notifications">
+    
+    </div>
+        
+    </div>
+    <!-- ionic/angularjs js -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+    <!-- your app's js -->
+    <script src="app.js"></script>
+    <script src="views/view1/view1.js"></script>
+    <script src="views/view2/view2.js"></script>
+    <script src="views/menu/menu.js"></script>
+  </body>
+</html>
