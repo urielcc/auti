@@ -8,7 +8,6 @@ angular.module('auti.menu', ['ngRoute'])
     controller: 'menuCtrl'
   });
 }])
-
-.controller('menuCtrl', [function() {
-	console.log("Menu");
-}]);
+.controller('menuCtrl', function($global, $scope) {
+	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';
+});
