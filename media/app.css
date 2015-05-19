@@ -1,5 +1,8 @@
 /* app css stylesheet */
-
+.animated{
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
