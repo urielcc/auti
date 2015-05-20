@@ -25,7 +25,7 @@ angular.module('auti.menu', ['ngRoute'])
 		setTimeout(function(){
       		tile.style.display = "block";
       		tile.className += " animated slideInUp";
-    	},100 * id);
+    	},50 * id);
 	};
 
 	$scope.loadTiles();
