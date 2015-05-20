@@ -1,1 +1,5 @@
-# auti
+# Proyecto
+
+## Instalar componentes
+
+`bower install`

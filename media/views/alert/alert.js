@@ -19,10 +19,9 @@ angular.module('auti.alert', ['ngRoute'])
        audio.addEventListener('error', function(error){ onFinish(); });
   };
   playAudio("tienes hambre?", function(){});
-  
-  $scope.hola ="1";
+
   $scope.sendAnswer = function(answer){
-    document.getElementById('alert').className = 'row animated slideOutUp';
+    document.getElementById('alert').className = 'row animated slideOutDown fadeOut';
     setTimeout(function(){
       location.href='#/';
     },250);

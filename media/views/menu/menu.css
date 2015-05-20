@@ -11,3 +11,6 @@
 	display: block; 
 	margin: 0 auto;
 }
+.no-margin{
+	padding: 0 -0.75rem !important;
+}
