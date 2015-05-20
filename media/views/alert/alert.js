@@ -21,7 +21,7 @@ angular.module('auti.alert', ['ngRoute'])
   playAudio("tienes hambre?", function(){});
 
   $scope.sendAnswer = function(answer){
-    document.getElementById('alert').className = 'row animated slideOutDown fadeOut';
+    document.getElementById('alert').className = 'row animated slideOutDown';
     setTimeout(function(){
       location.href='#/';
     },250);
