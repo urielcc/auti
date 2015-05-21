@@ -11,7 +11,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DIRS = (
-    #os.path.join(BASE_DIR, 'infiworkers/templates'),
+    os.path.join(BASE_DIR, 'game/templates'),
 )
  
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_extensions'
+    'django_extensions',
+    'game'
 )
 
 MIDDLEWARE_CLASSES = (
