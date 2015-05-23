@@ -8,7 +8,7 @@ angular.module('auti.menu', ['ngRoute'])
     controller: 'menuCtrl'
   });
 }])
-.controller('menuCtrl', function($global, $scope, ngToast) {
+.controller('menuCtrl', function($global, $scope, $http, ngToast) {
 	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';	
 
 	$scope.loadTiles = function(){
@@ -30,7 +30,21 @@ angular.module('auti.menu', ['ngRoute'])
 	$scope.updateAlert = function() {
 		var mensaje = new Mensaje();
 		var alerta = new Alert();
-
+		$http({
+            method  : 'POST',
+            url     : '/api/checkalert/', 
+            headers: {
+            	'Content-Type': 'application/x-www-form-urlencoded',
+      			'X-CSRFToken' : CSRF_TOKEN
+        	},
+            data: {}
+        })
+        .success(function(data) {
+            console.log(data);
+        })
+        .error(function(data, status, headers, config) {
+           
+        });
 		$global.add("alert", alerta);
 		ngToast.create(mensaje.getContenido());
 	}

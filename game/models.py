@@ -10,3 +10,11 @@ class Person(Document):
 	name = StringField(max_length=100)
 	def __unicode__(self):
     		return self.name
+
+class Alert(Document):
+	title = StringField(max_length=200)
+	type = IntField()
+	img = StringField(max_length=100)
+	sound = StringField(max_length=100)
+	def __unicode__(self):
+    		return self.title
