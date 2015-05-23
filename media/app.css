@@ -39,3 +39,6 @@
   padding-top: 65px !important;
   padding-bottom: 70px !important;
 }
+.not-active {
+   color: #FFF;
+}

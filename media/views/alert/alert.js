@@ -10,10 +10,12 @@ angular.module('auti.alert', ['ngRoute'])
 }])
 
 .controller('alertCtrl', function($scope, $http, $global) {
+
+  $scope.alert = $global.get("alert");
+
   document.getElementsByTagName('body')[0].className = 'red lighten-3';
 	var audio = null;
 	var playAudio = function(text, onFinish){
-    console.log(encodeURIComponent(text));
        audio = new Audio('https://translate.google.com/translate_tts?tl=es&q=' + encodeURIComponent(text));
        audio.play();
        audio.addEventListener('ended', onFinish);
@@ -27,5 +29,6 @@ angular.module('auti.alert', ['ngRoute'])
       location.href='#/';
     },250);
   };
+
 
 });

@@ -9,8 +9,7 @@ angular.module('auti.menu', ['ngRoute'])
   });
 }])
 .controller('menuCtrl', function($global, $scope, ngToast) {
-	ngToast.create('<i class="mdi-content-add"></i> Tienes un mensaje nuevo!');
-	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';
+	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';	
 
 	$scope.loadTiles = function(){
 		var tiles = document.getElementsByClassName("tile");
@@ -28,6 +27,15 @@ angular.module('auti.menu', ['ngRoute'])
     	},50 * id);
 	};
 
+	$scope.updateAlert = function() {
+		var mensaje = new Mensaje();
+		var alerta = new Alert();
+
+		$global.add("alert", alerta);
+		ngToast.create(mensaje.getContenido());
+	}
+
+	$scope.updateAlert();
 	$scope.loadTiles();
 	
 });

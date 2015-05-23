@@ -36,3 +36,21 @@ autoApp.config(['ngToastProvider', function(ngToastProvider) {
   });
 }]);
 
+function Mensaje(){
+	var contenido = '<a class="not-active" href="#/alert"><i class="mdi-content-add"></i> Tienes un mensaje nuevo!</a>';
+	this.setContenido = function(_contenido){
+		contenido = _contenido;
+	};
+	this.getContenido = function(){
+		console.log(contenido);
+		return contenido
+	};
+};
+
+function Alert(){
+	this.id = "1";
+	this.title = "¿Tienes hambre?";
+	this.type = "1";
+	this.img = "foot.png";
+	this.sound;
+}
