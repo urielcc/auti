@@ -7,6 +7,7 @@ var autoApp = angular.module('auti', [
   'auti.view2',
   'auti.menu',
   'auti.alert',
+  'ngToast'
 ]);
 
 autoApp.config(['$routeProvider', function($routeProvider) {
@@ -28,4 +29,10 @@ autoApp.service('$global', function () {
 	    }
 	};
 });
+
+autoApp.config(['ngToastProvider', function(ngToastProvider) {
+  ngToastProvider.configure({
+    additionalClasses: 'toast zoomIn orange darken-1'
+  });
+}]);
 

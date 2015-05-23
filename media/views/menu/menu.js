@@ -8,12 +8,12 @@ angular.module('auti.menu', ['ngRoute'])
     controller: 'menuCtrl'
   });
 }])
-.controller('menuCtrl', function($global, $scope) {
+.controller('menuCtrl', function($global, $scope, ngToast) {
+	ngToast.create('<i class="mdi-content-add"></i> Tienes un mensaje nuevo!');
 	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';
 
 	$scope.loadTiles = function(){
 		var tiles = document.getElementsByClassName("tile");
-		console.log(tiles);
 
 		for (var i = 0; i < tiles.length; i++) {
 			tiles[i].style.display = "none";
