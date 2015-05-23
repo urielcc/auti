@@ -4,7 +4,7 @@ angular.module('auti.menu', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'views/menu/menu.html',
+    templateUrl: '/media/views/menu/menu.html',
     controller: 'menuCtrl'
   });
 }])

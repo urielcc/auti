@@ -11,7 +11,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'game/templates'),
+    os.path.join(BASE_DIR, 'media'),
 )
  
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

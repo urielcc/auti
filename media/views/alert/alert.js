@@ -4,7 +4,7 @@ angular.module('auti.alert', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/alert', {
-    templateUrl: 'views/alert/alert.html',
+    templateUrl: '/media/views/alert/alert.html',
     controller: 'alertCtrl'
   });
 }])
