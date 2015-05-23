@@ -13,12 +13,13 @@ angular.module('auti.alert', ['ngRoute'])
   document.getElementsByTagName('body')[0].className = 'red lighten-3';
 	var audio = null;
 	var playAudio = function(text, onFinish){
-       audio = new Audio('http://translate.google.com/translate_tts?tl=es&q=' + encodeURIComponent(text));
+    console.log(encodeURIComponent(text));
+       audio = new Audio('https://translate.google.com/translate_tts?tl=es&q=' + encodeURIComponent(text));
        audio.play();
        audio.addEventListener('ended', onFinish);
        audio.addEventListener('error', function(error){ onFinish(); });
   };
-  playAudio("tienes hambre?", function(){});
+  playAudio("tienes", function(){});
 
   $scope.sendAnswer = function(answer){
     document.getElementById('alert').className = 'row animated slideOutDown';
