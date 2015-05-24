@@ -2,11 +2,12 @@
 
 var autiAdmin = angular.module('auti', [
   'ngRoute',
-  'auti.adminIndex'
+  'auti.adminIndex',
+  'auti.uploadAlert'
 ]);
 
 autiAdmin.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/'});
+  $routeProvider.otherwise({redirectTo: '/upload-alert'});
 }]);
 
 autiAdmin.controller('notifications', [

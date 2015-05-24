@@ -182,11 +182,41 @@
         <!-- /#page-wrapper -->
 
     </div>
+    <script type=text/ng-template id=upload.html>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Alerta <small>nueva</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-dashboard"></i> Dashboard
+                                <i class="fa fa-dashboard"></i> / Alerta nueva
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+        <form id="form-content" action="" method="post" class="col-md-6 form-panel" enctype="multipart/form-data"> {% csrf_token %}
+            
+                {%for field in form%}
+                    <div class="form-group">
+                    {{field.label_tag}}
+                    {{field}}
+                </div>
+            {%endfor%}
+        </form>
+        </div>
+        <div class="row"><input type="submit" value="Registrarse" ng-click="register()" id="button-register" class="btn btn-success">
+        </div>
+    </script>
+
     <!-- angularjs js -->
     <script src="/media/bower_components/angular/angular.min.js"></script>
     <script src="/media/bower_components/angular-route/angular-route.js"></script>
     <script src="/media/js/admin-app.js"></script>
     <script src="/media/views/adminIndex/adminIndex.js"></script>
+    <script src="/media/views/uploadAlert/uploadAlert.js"></script>
     <script type="text/javascript">
       var CSRF_TOKEN = "{{ csrf_token }}";
     </script>

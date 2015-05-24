@@ -3,3 +3,6 @@ media/components
 *.DS_Store
 *.pyc
 *.mp3
+*.png
+*.jpeg
+*.jpg

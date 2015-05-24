@@ -36,3 +36,9 @@ class Alert(Document):
 	def __unicode__(self):
     		return unicode(self.alert_id)
 
+class AplicationData(Document):
+	alert_count = IntField()
+	alert_type_count = IntField()
+	def __unicode__(self):
+    		return unicode(self.alert_count)
+

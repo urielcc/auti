@@ -143,7 +143,15 @@
                                 <i class="fa fa-dashboard"></i> / Nueva Alerta
                             </li>
                         </ol>
-
+                <form id="form-content" action="" method="post" class="col-md-6 form-panel" enctype="multipart/form-data"> {% csrf_token %}
+                <h4>Nueva alerta</h4>
+                {%for field in form%}
+                    <div class="form-group">
+                    {{field.label_tag}}
+                    {{field}}
+                    </div>
+                {%endfor%}
+                </form>
 
                 <div class="row">
                     <div class="col-lg-4">
