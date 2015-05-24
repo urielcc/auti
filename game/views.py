@@ -62,13 +62,15 @@ def newAlert(request):
 	if 'image' in request.FILES:
 		fileSaveName  = handle_uploaded_image(request.FILES['image'], temp_id)
 	path = settings.MEDIA_ROOT
-	audio_extract(input_text = request.POST['title'], args = {'language':'es','output':path+'/audio/saludo.mp3'})
+	dateUploadFile = time.strftime("%Y-%m-%d")
+	soundName = dateUploadFile+'_'+str(temp_id)+'.mp3'
+	audio_extract(input_text = request.POST['title'], args = {'language':'es','output':path+'/audio/'+soundName})
 	
 	alert = AlertType(
     	title = request.POST['title'],
     	type_id = temp_id,
     	img = fileSaveName,
-    	sound = "saludo.mp3"
+    	sound = soundName
     )
 
 	alert.save()

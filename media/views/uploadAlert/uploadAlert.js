@@ -5,11 +5,11 @@ angular.module('auti.uploadAlert', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/upload-alert', {
     templateUrl: 'upload.html',
-    controller: 'adminCtrl'
+    controller: 'uploadCtrl'
   });
 }])
 
-.controller('adminCtrl', ['$scope', '$http',function($scope, $http) {
+.controller('uploadCtrl', ['$scope', '$http',function($scope, $http) {
 	$scope.register = function() {
         var form = document.getElementById('form-content');
         

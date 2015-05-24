@@ -12,7 +12,7 @@ angular.module('auti.adminIndex', ['ngRoute'])
 .controller('adminCtrl', ['$scope', '$http',function($scope, $http) {
 	
 	$scope.alertas = new Array();
-	
+	console.log("hola");
 	$scope.alertasDisponibles = function(){
 		$http({
             method  : 'POST',
@@ -46,6 +46,9 @@ angular.module('auti.adminIndex', ['ngRoute'])
         })
         .success(function(data) {
             console.log(data);
+            if(data.statusCode == 0){
+                $scope.alertasDisponibles();
+            }
                         
         })
         .error(function(data, status, headers, config) {
