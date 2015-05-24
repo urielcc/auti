@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+        Enviar <small>alerta</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li class="active">
+                <i class="fa fa-dashboard"></i> Panel
+                <i class="fa fa-dashboard"></i> / enviar alerta
+            </li>
+        </ol>
+    </div>
+</div>
+
+      <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Alertas disponibles</h3>
+                            </div>
+                            <div class="wrap  panel-body">
+                            <div class=" row col-md-8" ng-if="alertas.length">
+                            
+                                <div class="row alerts-header">
+                                    <div class="col-xs-5"><h4>Descripción</h4></div>
+                                    <div class="col-xs-3"><h4>Imagén</h4></div>
+                                </div>
+                                <div class="row alert-item" ng-repeat="alerta in alertas">
+                                    <div class="col-xs-5"><span>{{alerta.title}}</span></div>
+                                    <div class="col-xs-3"><img src="/media/img/75x75/{{alerta.img}}" class="img-rounded"></div>
+                                    <div class="col-xs-4">
+                                        <button type="button" class="btn btn-success" ng-click="sendAlert(alerta.type_id)">Enviar</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div ng-if="!alertas.length">
+                                <h3>No hay alertas disponibles</h3>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

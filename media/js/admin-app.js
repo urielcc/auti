@@ -3,7 +3,8 @@
 var autiAdmin = angular.module('auti', [
   'ngRoute',
   'auti.adminIndex',
-  'auti.uploadAlert'
+  'auti.uploadAlert',
+  'auti.sendAlert'
 ]);
 
 autiAdmin.config(['$routeProvider', function($routeProvider) {

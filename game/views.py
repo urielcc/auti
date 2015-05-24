@@ -30,7 +30,7 @@ def admin(request):
 
 def checkAlert(request):
 	
-	print "Va a buscar"
+	
 	alertData = Alert.objects(is_active = True).first()
 	if(alertData):
 		alert = AlertType.objects(type_id = alertData.type_id).first()
@@ -76,12 +76,29 @@ def newAlert(request):
 	alert.save()
 	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})	
 
+def sendAlert(request):
+	data = json.loads(request.body)
+	appData = AplicationData.objects().first()
+	temp_id = appData.alert_type_count
+	appData.alert_type_count += 1
+	appData.save()
+	alert = Alert(
+		alert_id = temp_id,
+		type_id = data["alert_type"],
+		is_active = True,
+		is_received = False,
+		is_responded = False
+	)
+	alert.save()
+	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})	
+
 def api(request, opcion=None):
     options = { 
     	'checkalert' : checkAlert,
     	'alertsAvailables': alertsAvailables,
     	'deleteAlert' : deleteAlert,
-    	'newAlert' : newAlert
+    	'newAlert' : newAlert,
+    	'sendAlert' : sendAlert
     }
     #if request.method == 'POST':
     return options[opcion](request)
