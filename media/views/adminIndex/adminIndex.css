@@ -1,0 +1,20 @@
+.alert-item{
+	height: 50px;
+}
+.alert-item img{
+	max-height: 40px;
+	margin-top: 5px;
+}
+.alert-item span{
+	font-size: 16px;
+	padding-left: 15px;
+	display: block;
+	margin-top: 10px;
+}
+.alert-item img, .alert-item button{
+	display: block;
+	margin: 0 auto;
+}
+.alerts-header h4{
+	text-align: center;
+}

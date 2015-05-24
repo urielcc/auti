@@ -52,7 +52,7 @@ angular.module('auti.menu', ['ngRoute'])
         .error(function(data, status, headers, config) {
            
         });
-	}
+	};
   $scope.tid = setTimeout($scope.updateAlert, 1000);
 	//$scope.updateAlert();
 	$scope.loadTiles();

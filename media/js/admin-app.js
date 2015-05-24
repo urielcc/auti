@@ -9,6 +9,9 @@ autiAdmin.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
+autiAdmin.controller('notifications', [
+	'$scope', '$http', function($scope, $http) {
+}]);
 
 autiAdmin.service('$global', function () {
 	var _values = { };

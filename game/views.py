@@ -36,10 +36,24 @@ def checkAlert(request):
 	else:
 		return JsonResponse({'statusCode':1, 'message':'No hay alertas'})
 
+def alertsAvailables(request):
+	alerts = AlertType.objects()
+	results = [ob.as_json() for ob in alerts]
+	return HttpResponse(json.dumps(results))
+
+def deleteAlert(request):
+	data = json.loads(request.body)
+	alert = AlertType.objects(type_id = data["alert_id"]).first()
+	alert.delete()
+	return JsonResponse({'statusCode':0, 'message':'Alerta eliminada'})
+
+
 def api(request, opcion=None):
     
     options = { 
-    	'checkalert' : checkAlert
+    	'checkalert' : checkAlert,
+    	'alertsAvailables': alertsAvailables,
+    	'deleteAlert' : deleteAlert
     }
     #if request.method == 'POST':
     return options[opcion](request)

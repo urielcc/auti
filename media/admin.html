@@ -8,6 +8,7 @@
     <link href="/media/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="/media/css/sb-admin.css" rel="stylesheet">
+    <link href="/media/views/adminIndex/adminIndex.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -186,6 +187,9 @@
     <script src="/media/bower_components/angular-route/angular-route.js"></script>
     <script src="/media/js/admin-app.js"></script>
     <script src="/media/views/adminIndex/adminIndex.js"></script>
+    <script type="text/javascript">
+      var CSRF_TOKEN = "{{ csrf_token }}";
+    </script>
 </body>
 
 </html>
