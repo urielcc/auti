@@ -1,22 +1,16 @@
 'use strict';
 
-var autoApp = angular.module('auti', [
+var autiAdmin = angular.module('auti', [
   'ngRoute',
-  'auti.view1',
-  'auti.view2',
-  'auti.menu',
-  'auti.alert',
-  'ngToast'
+  'auti.adminIndex'
 ]);
 
-autoApp.config(['$routeProvider', function($routeProvider) {
+autiAdmin.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
-autoApp.controller('notifications', [
-	'$scope', '$http', function($scope, $http) {
-}]);
-autoApp.service('$global', function () {
+
+autiAdmin.service('$global', function () {
 	var _values = { };
     this.values = _values;
     return {
@@ -28,27 +22,3 @@ autoApp.service('$global', function () {
 	    }
 	};
 });
-
-autoApp.config(['ngToastProvider', function(ngToastProvider) {
-  ngToastProvider.configure({
-    additionalClasses: 'toast zoomIn orange darken-1'
-  });
-}]);
-
-function Mensaje(){
-	var contenido = '<a class="not-active" href="#/alert"><i class="mdi-content-add"></i> Tienes un mensaje nuevo!</a>';
-	this.setContenido = function(_contenido){
-		contenido = _contenido;
-	};
-	this.getContenido = function(){
-		return contenido
-	};
-};
-
-function Alert(){
-	this.id = "1";
-	this.title = "¿Tienes hambre?";
-	this.type_id = "1";
-	this.img = "foot.png";
-	this.sound;
-}

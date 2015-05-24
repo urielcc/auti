@@ -21,6 +21,9 @@ def index(request):
     #audio_extract(input_text=alert.title, args = {'language':'es','output':path+'/audio/saludo.mp3'})
     return render_to_response('index.html', RequestContext(request, {}))
 
+def admin(request):
+	return render_to_response('admin.html', RequestContext(request, {}))	
+
 def checkAlert(request):
 	
 	print "Va a buscar"
