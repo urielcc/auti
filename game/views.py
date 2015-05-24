@@ -30,13 +30,16 @@ def admin(request):
 
 def checkAlert(request):
 	
-	
+	data = json.loads(request.body)
 	alertData = Alert.objects(is_active = True).first()
 	if(alertData):
 		alert = AlertType.objects(type_id = alertData.type_id).first()
-		alertData.is_active = False
-		alertData.save()
-		return HttpResponse(json.dumps(alert.as_json()))
+		if(data["origin"] is "1"):
+			alertData.is_received = True
+			alertData.save()
+		response = alert.as_json()
+		response["id"] =  alertData.alert_id
+		return HttpResponse(json.dumps(response))
 	else:
 		return JsonResponse({'statusCode':1, 'message':'No hay alertas'})
 
@@ -90,6 +93,24 @@ def sendAlert(request):
 		is_responded = False
 	)
 	alert.save()
+	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})
+
+def answer(request):
+	data = json.loads(request.body)
+	alertData = Alert.objects(is_active = True).first()
+	alertData.is_active = False
+	alertData.is_responded = True
+
+	answer = Answer()
+	answer.alert_id = alertData.alert_id
+	print data["answer"]
+	if(data["answer"]):
+		answer.response = True
+	else:
+		answer.response = False
+	answer.save()
+	alertData.save()
+
 	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})	
 
 def api(request, opcion=None):
@@ -98,7 +119,8 @@ def api(request, opcion=None):
     	'alertsAvailables': alertsAvailables,
     	'deleteAlert' : deleteAlert,
     	'newAlert' : newAlert,
-    	'sendAlert' : sendAlert
+    	'sendAlert' : sendAlert,
+    	'answer' : answer
     }
     #if request.method == 'POST':
     return options[opcion](request)
