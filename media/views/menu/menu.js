@@ -29,7 +29,7 @@ angular.module('auti.menu', ['ngRoute'])
 
 	$scope.updateAlert = function() {
 		var mensaje = new Mensaje();
-		var alerta = new Alert();
+		//var alerta = new Alert();
 		$http({
             method  : 'POST',
             url     : '/api/checkalert/', 
@@ -41,15 +41,20 @@ angular.module('auti.menu', ['ngRoute'])
         })
         .success(function(data) {
             console.log(data);
+            if(data.statusCode === 0){
+              $global.add("alert", data);
+			        ngToast.create(mensaje.getContenido());
+            }else{
+              tid = setTimeout($scope.updateAlert, 5000);
+            }
+
         })
         .error(function(data, status, headers, config) {
            
         });
-		$global.add("alert", alerta);
-		ngToast.create(mensaje.getContenido());
 	}
-
-	$scope.updateAlert();
+  $scope.tid = setTimeout($scope.updateAlert, 1000);
+	//$scope.updateAlert();
 	$scope.loadTiles();
 	
 });

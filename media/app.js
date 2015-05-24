@@ -42,7 +42,6 @@ function Mensaje(){
 		contenido = _contenido;
 	};
 	this.getContenido = function(){
-		console.log(contenido);
 		return contenido
 	};
 };
@@ -50,7 +49,7 @@ function Mensaje(){
 function Alert(){
 	this.id = "1";
 	this.title = "¿Tienes hambre?";
-	this.type = "1";
+	this.type_id = "1";
 	this.img = "foot.png";
 	this.sound;
 }

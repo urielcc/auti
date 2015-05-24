@@ -1,15 +1,16 @@
 from django.shortcuts import render, redirect, render_to_response
-from django.http import JsonResponse, Http404
+from django.http import JsonResponse, Http404, HttpResponse
 from django.template import Template, RequestContext
 from game.models import *
 import sys
+import json
 
 def index(request):
     #person = Person(name = "Uriel")
     #person.save()
-    #alert = Alert(
+    #alert = AlertType(
     #	title = "Hola Como estas",
-    #	type = 1,
+    #	type_id = 1,
     #	img = "foot.png",
     #	sound = "hola"
     #)
@@ -18,21 +19,26 @@ def index(request):
 
 def checkAlert(request):
 	
-	register = Alert.objects(type = 1).first()
-	print >>sys.stderr, register
-	print str(register.__class__)
-	return JsonResponse({'statusCode':0, 'message':'Datos guardados correctamente'})
+	print "Va a buscar"
+	alertData = Alert.objects(is_active = True).first()
+	if(alertData):
+		alert = AlertType.objects(type_id = alertData.type_id).first()
+		alertData.is_active = False
+		alertData.save()
+		return HttpResponse(json.dumps(alert.as_json()))
+	else:
+		return JsonResponse({'statusCode':1, 'message':'No hay alertas'})
 
 def api(request, opcion=None):
     
     options = { 
     	'checkalert' : checkAlert
     }
-    if request.method == 'POST':
-        return options[opcion](request)
-    try:
-        return options[opcion](request)
-    except:
-            raise Http404
-    else:
-        raise Http404
+    #if request.method == 'POST':
+    return options[opcion](request)
+    #try:
+    #    return options[opcion](request)
+    #except:
+    #        raise Http404
+    #else:
+    #    raise Http404
