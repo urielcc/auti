@@ -37,7 +37,7 @@ angular.module('auti.menu', ['ngRoute'])
             	'Content-Type': 'application/x-www-form-urlencoded',
       			'X-CSRFToken' : CSRF_TOKEN
         	},
-            data: {}
+            data: {origin : 1}
         })
         .success(function(data) {
             console.log(data);
