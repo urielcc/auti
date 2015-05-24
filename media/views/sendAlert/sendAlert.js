@@ -12,7 +12,7 @@ angular.module('auti.sendAlert', ['ngRoute'])
 .controller('sendCtrl', ['$scope', '$http',function($scope, $http) {
     console.log("Hola");
     $scope.alertas = new Array();
-    $scope.state = 1;
+    $scope.state = 0;
     console.log("hola");
 
     $scope.updateAlert = function() {
@@ -30,10 +30,11 @@ angular.module('auti.sendAlert', ['ngRoute'])
         .success(function(data) {
             console.log(data);
             if(data.statusCode === 0){
-              //$global.add("alert", data);
-                //ngToast.create(mensaje.getContenido());
+                $scope.state = 1;
+                $scope.alertas.push(data);             
             }else{
-                  $scope.alertasDisponibles();
+                $scope.state = 2;
+                $scope.alertasDisponibles();
             }
 
         })
@@ -55,16 +56,15 @@ angular.module('auti.sendAlert', ['ngRoute'])
         })
         .success(function(data) {
             console.log(data);
-                 $scope.alertas = data;             
+            $scope.alertas = data;             
         })
         .error(function(data, status, headers, config) {
            
         });
     };
 
-    $scope.alertasDisponibles();
-
 	 $scope.sendAlert = function(id){
+        $scope.state = 3;
       $http({
             method  : 'POST',
             url     : '/api/sendAlert/', 
@@ -76,11 +76,14 @@ angular.module('auti.sendAlert', ['ngRoute'])
         })
         .success(function(data) {
             console.log(data);
-            
-                        
+            if(data.statusCode == 0){
+                $scope.alertas = new Array();
+                $scope.updateAlert();
+            }
+                
         })
         .error(function(data, status, headers, config) {
-           
+           $scope.state = 2;
         });
   };
 }]);
