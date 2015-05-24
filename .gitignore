@@ -2,3 +2,4 @@ media/bower_components
 media/components
 *.DS_Store
 *.pyc
+*.mp3

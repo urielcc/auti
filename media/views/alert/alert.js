@@ -16,7 +16,7 @@ angular.module('auti.alert', ['ngRoute'])
   document.getElementsByTagName('body')[0].className = 'red lighten-3';
 	var audio = null;
 	var playAudio = function(text, onFinish){
-       audio = new Audio('https://translate.google.com/translate_tts?tl=es&q=' + encodeURIComponent(text));
+       audio = new Audio('/media/audio/saludo.mp3');
        audio.play();
        audio.addEventListener('ended', onFinish);
        audio.addEventListener('error', function(error){ onFinish(); });

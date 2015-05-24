@@ -1,0 +1,44 @@
+/* app css stylesheet */
+.animated{
+  -webkit-animation-duration:0.25s;
+  animation-duration:0.25s;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+#wrapper{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.big-card{
+  padding-top: 65px !important;
+  padding-bottom: 70px !important;
+}
+.not-active {
+   color: #FFF;
+}

@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, render_to_response
 from django.http import JsonResponse, Http404, HttpResponse
 from django.template import Template, RequestContext
+from django.conf import settings
 from game.models import *
+from game.tts_service import audio_extract
 import sys
 import json
 
@@ -9,12 +11,14 @@ def index(request):
     #person = Person(name = "Uriel")
     #person.save()
     #alert = AlertType(
-    #	title = "Hola Como estas",
+    #	title = "Hola, Como estas?",
     #	type_id = 1,
     #	img = "foot.png",
-    #	sound = "hola"
+    #	sound = "saludo.mp3"
     #)
     #alert.save()
+    #path = settings.MEDIA_ROOT
+    #audio_extract(input_text=alert.title, args = {'language':'es','output':path+'/audio/saludo.mp3'})
     return render_to_response('index.html', RequestContext(request, {}))
 
 def checkAlert(request):

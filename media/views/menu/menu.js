@@ -45,7 +45,7 @@ angular.module('auti.menu', ['ngRoute'])
               $global.add("alert", data);
 			        ngToast.create(mensaje.getContenido());
             }else{
-              tid = setTimeout($scope.updateAlert, 5000);
+              $scope.tid = setTimeout($scope.updateAlert, 5000);
             }
 
         })
