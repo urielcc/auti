@@ -44,6 +44,7 @@ class AplicationData(Document):
 
 class Answer(Document):
 	alert_id = IntField()
+	type_id = IntField()
 	response = BooleanField()
 	def __unicode__(self):
     		return unicode(self.alert_id)

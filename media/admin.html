@@ -9,6 +9,7 @@
     <!-- Custom CSS -->
     <link href="/media/css/sb-admin.css" rel="stylesheet">
     <link href="/media/views/adminIndex/adminIndex.css" rel="stylesheet">
+    <link href="/media/views/checkAnswers/checkAnswers.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -39,6 +40,9 @@
                     <li>
                         <a href="#/send-alert"><i class="fa fa-fw fa-table"></i> Enviar Alerta</a>
                     </li>
+                    <li>
+                        <a href="#/report"><i class="fa fa-fw fa-table"></i>Reporte</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -58,7 +62,7 @@
 
     </div>
     <script type=text/ng-template id=upload.html>
-                <div class="row">
+            <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Alerta <small>nueva</small>
@@ -82,7 +86,16 @@
             {%endfor%}
         </form>
         </div>
-        <div class="row"><input type="submit" value="Registrarse" ng-click="register()" id="button-register" class="btn btn-success">
+        <div class="row lpad" ng-if="state == 0"><input type="submit" value="Registrarse" ng-click="register()" id="button-register" class="btn btn-success">
+        </div>
+        <div class="row lpad" ng-if="state == 1">
+        <h3>Cargando ...</h3>
+        </div>
+        <div class="row lpad" ng-if="state == 2">
+        <h3>Registro satisfactorio </h3>
+        </div>
+        <div class="row lpad" ng-if="state == 3">
+        <h3>Error de conexion</h3>
         </div>
     </script>
 
@@ -93,6 +106,7 @@
     <script src="/media/views/adminIndex/adminIndex.js"></script>
     <script src="/media/views/uploadAlert/uploadAlert.js"></script>
     <script src="/media/views/sendAlert/sendAlert.js"></script>
+    <script src="/media/views/checkAnswers/checkAnswers.js"></script>
     <script type="text/javascript">
       var CSRF_TOKEN = "{{ csrf_token }}";
     </script>

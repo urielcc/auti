@@ -103,6 +103,7 @@ def answer(request):
 
 	answer = Answer()
 	answer.alert_id = alertData.alert_id
+	answer.type_id = alertData.type_id
 	print data["answer"]
 	if(data["answer"]):
 		answer.response = True
@@ -113,6 +114,20 @@ def answer(request):
 
 	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})	
 
+def checkAnswers(request):
+	answers = Answer.objects()
+	results = []
+	for answer in answers:
+		alertData = AlertType.objects(type_id = answer.type_id).first()
+		print alertData
+		if(alertData):
+			dic_tmp = alertData.as_json()
+			dic_tmp ["answer"] = answer.response
+			results.append(dic_tmp)
+
+	return HttpResponse(json.dumps(results))
+
+
 def api(request, opcion=None):
     options = { 
     	'checkalert' : checkAlert,
@@ -120,7 +135,8 @@ def api(request, opcion=None):
     	'deleteAlert' : deleteAlert,
     	'newAlert' : newAlert,
     	'sendAlert' : sendAlert,
-    	'answer' : answer
+    	'answer' : answer,
+    	'checkAnswers' : checkAnswers
     }
     #if request.method == 'POST':
     return options[opcion](request)

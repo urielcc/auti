@@ -10,6 +10,7 @@ angular.module('auti.uploadAlert', ['ngRoute'])
 }])
 
 .controller('uploadCtrl', ['$scope', '$http',function($scope, $http) {
+    $scope.state = 0;
 	$scope.register = function() {
         var form = document.getElementById('form-content');
         var elements = form.getElementsByClassName('form-control');
@@ -23,6 +24,7 @@ angular.module('auti.uploadAlert', ['ngRoute'])
         };
 
         if(validationSuccess){
+            $scope.state = 1;
             var form = document.getElementById('form-content');
             var datos = new FormData(form);
             $http({
@@ -34,10 +36,10 @@ angular.module('auti.uploadAlert', ['ngRoute'])
             })
             .success(function(data) {
                 console.log(data);
-                
+                $scope.state = 2;
             })
             .error(function(data, status, headers, config) {
-                    
+              $scope.state = 3;      
             });
         }
     };

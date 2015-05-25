@@ -24,7 +24,6 @@ angular.module('auti.adminIndex', ['ngRoute'])
             data: {}
         })
         .success(function(data) {
-            console.log(data);
       			 $scope.alertas = data;             
         })
         .error(function(data, status, headers, config) {
@@ -33,6 +32,27 @@ angular.module('auti.adminIndex', ['ngRoute'])
 	};
 
 	$scope.alertasDisponibles();
+
+  $scope.respuestasDisponibles = function(){
+    $http({
+            method  : 'POST',
+            url     : '/api/checkAnswers/', 
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRFToken' : CSRF_TOKEN
+          },
+            data: {}
+        })
+        .success(function(data) {
+            console.log(data);
+          
+        })
+        .error(function(data, status, headers, config) {
+           
+        });
+  };
+
+  $scope.respuestasDisponibles();
 
   $scope.deleteAlert = function(id){
       $http({
