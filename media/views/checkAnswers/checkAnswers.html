@@ -24,14 +24,16 @@
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Reporte de datos</h3>
                             </div>
                             <div class="wrap  panel-body">
-                            <div class=" row col-md-8" ng-if="respuestas.length">
+                            <div class=" row col-md-10" ng-if="respuestas.length">
                             
                                 <div class="row alerts-header">
+                                    <div class="col-xs-4"><h4>Fecha</h4></div>
                                     <div class="col-xs-5"><h4>Descripción</h4></div>
                                     <div class="col-xs-3"><h4>Repuestas</h4></div>
 
                                 </div>
-                                <div class="row alert-item" ng-repeat="alerta in respuestas">
+                                <div class="row report-item" ng-repeat="alerta in respuestas">
+                                    <div class="col-xs-4"><span>{{alerta.date}}</span></div>
                                     <div class="col-xs-5"><span>{{alerta.title}}</span></div>
                                     <div class="col-xs-3"><span>{{alerta.answer}}</span></div>
                                 </div>

@@ -27,6 +27,7 @@ angular.module('auti.checkAnswers', ['ngRoute'])
         .success(function(data) {
             console.log(data);
             $scope.respuestas = data;
+            $scope.tid = setTimeout($scope.respuestasDisponibles, 10000);
         })
         .error(function(data, status, headers, config) {
            

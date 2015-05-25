@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, render_to_response
 from django.http import JsonResponse, Http404, HttpResponse
 from django.template import Template, RequestContext
 from django.conf import settings
+from django.utils import timezone
 from game.models import *
 from game.forms import *
 from game.tts_service import audio_extract
@@ -104,6 +105,7 @@ def answer(request):
 	answer = Answer()
 	answer.alert_id = alertData.alert_id
 	answer.type_id = alertData.type_id
+	answer.date = timezone.now()
 	print data["answer"]
 	if(data["answer"]):
 		answer.response = True
@@ -123,6 +125,7 @@ def checkAnswers(request):
 		if(alertData):
 			dic_tmp = alertData.as_json()
 			dic_tmp ["answer"] = answer.response
+			dic_tmp ["date"] = answer.date.strftime('%Y-%m-%d %H:%M')
 			results.append(dic_tmp)
 
 	return HttpResponse(json.dumps(results))
