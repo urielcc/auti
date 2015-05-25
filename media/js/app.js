@@ -52,3 +52,4 @@ function Alert(){
 	this.img = "foot.png";
 	this.sound;
 }
+

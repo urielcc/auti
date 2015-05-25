@@ -8,7 +8,6 @@ class UploadForm(forms.Form):
 	    		'class':'form-control',
 	    		'data-form':'title',
                 'onblur':'validate(this)',
-                'ng-model':'title',
                 'placeholder':'Introduzca descripción de la alerta',
                 'maxlength':'60',
     		}
@@ -18,7 +17,6 @@ class UploadForm(forms.Form):
     image = forms.FileField(
         widget=forms.FileInput(
     		attrs={
-            'onchange':'angular.element(this).scope().loadImagePreview(this)',
     		'class':'form-control',
     		'accept':'image/x-png, image/gif, image/jpeg',
             'data-form':'imagen'
