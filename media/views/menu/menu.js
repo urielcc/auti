@@ -10,6 +10,7 @@ angular.module('auti.menu', ['ngRoute'])
 }])
 .controller('menuCtrl', function($global, $scope, $http, ngToast) {
 	document.getElementsByTagName('body')[0].className = 'blue-grey darken-1';	
+  $scope.mensajePendiente = false;
 
 	$scope.loadTiles = function(){
 		var tiles = document.getElementsByClassName("tile");
@@ -44,6 +45,7 @@ angular.module('auti.menu', ['ngRoute'])
             if(data.statusCode === 0){
               $global.add("alert", data);
 			        ngToast.create(mensaje.getContenido());
+              $scope.mensajePendiente = true;
             }else{
               $scope.tid = setTimeout($scope.updateAlert, 5000);
             }
@@ -53,6 +55,14 @@ angular.module('auti.menu', ['ngRoute'])
            
         });
 	};
+
+  $scope.mensajes = function(){
+    if($scope.mensajePendiente){
+      document.location.href ="#/alert";
+    }else{
+      document.location.href ="#/message";
+    }
+  };
   $scope.tid = setTimeout($scope.updateAlert, 1000);
 	//$scope.updateAlert();
 	$scope.loadTiles();

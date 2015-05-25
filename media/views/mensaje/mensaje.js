@@ -23,11 +23,11 @@ angular.module('auti.mensaje', ['ngRoute'])
             data: {title:msj, answer: true}
         })
         .success(function(data) {
-            console.log(data);
+            document.location.href ="#/";
             
         })
         .error(function(data, status, headers, config) {
-           
+           document.location.href ="#/";
         });
   };
 
