@@ -47,5 +47,6 @@ class Answer(Document):
 	type_id = IntField()
 	response = BooleanField()
 	date = DateTimeField()
+	title = StringField(max_length=200)
 	def __unicode__(self):
     		return unicode(self.alert_id)

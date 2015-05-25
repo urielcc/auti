@@ -6,6 +6,7 @@ var autoApp = angular.module('auti', [
   'auti.view2',
   'auti.menu',
   'auti.alert',
+  'auti.mensaje',
   'ngToast'
 ]);
 

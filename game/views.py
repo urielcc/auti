@@ -102,9 +102,12 @@ def answer(request):
 	alertData.is_active = False
 	alertData.is_responded = True
 
+	alertType= AlertType.objects(type_id = alertData.type_id).first()
+
 	answer = Answer()
 	answer.alert_id = alertData.alert_id
 	answer.type_id = alertData.type_id
+	answer.title = alertType.title
 	answer.date = timezone.now()
 	print data["answer"]
 	if(data["answer"]):
@@ -120,15 +123,24 @@ def checkAnswers(request):
 	answers = Answer.objects()
 	results = []
 	for answer in answers:
-		alertData = AlertType.objects(type_id = answer.type_id).first()
-		print alertData
-		if(alertData):
-			dic_tmp = alertData.as_json()
-			dic_tmp ["answer"] = answer.response
-			dic_tmp ["date"] = answer.date.strftime('%Y-%m-%d %H:%M')
-			results.append(dic_tmp)
+		dic_tmp = {}
+		dic_tmp ["title"] = answer.title
+		dic_tmp ["answer"] = answer.response
+		dic_tmp ["date"] = answer.date.strftime('%Y-%m-%d %H:%M')
+		results.append(dic_tmp)
 
 	return HttpResponse(json.dumps(results))
+
+def message(request):
+	data = json.loads(request.body)
+	answer = Answer()
+	answer.response = data["answer"]
+	answer.type_id = 0
+	answer.title = data["title"]
+	answer.date = timezone.now()
+	answer.save()
+	return JsonResponse({'statusCode':0, 'message':'Alerta cargada'})	
+
 
 
 def api(request, opcion=None):
@@ -139,7 +151,8 @@ def api(request, opcion=None):
     	'newAlert' : newAlert,
     	'sendAlert' : sendAlert,
     	'answer' : answer,
-    	'checkAnswers' : checkAnswers
+    	'checkAnswers' : checkAnswers,
+    	'message' : message
     }
     #if request.method == 'POST':
     return options[opcion](request)
