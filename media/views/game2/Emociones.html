@@ -1,0 +1,69 @@
+<html>
+<head><title></title>
+<script type="text/javascript" src="js/emociones.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/sound.js"></script>	
+<link rel="stylesheet" type="text/css" href="css/style_emociones.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+<link rel="stylesheet" type="text/css" href="css/style_slide.css">
+</head>
+<body >
+	<div id="container">
+
+	<div id="Emociones">
+  <img src="Emociones/img1.jpg" id="image"/>
+  <div class="left_hold"><img onClick="Show(-1)" class="left" src="Emociones/back.png"></div>
+  <div class="right_hold"><img onClick="Show(1)" class="right" src="Emociones/next.png"></div>
+  
+  </div>
+
+
+   <div id="rojo">
+    <button type="button"  href="" id="flato-red-button" onclick="apagarPrender('amor')">Amor</button>
+   </div>
+
+    <div id="rosa">
+    <button type="button"  href="" id="flato-pink-button" onclick="apagarPrender('dolor')">Dolor</button>
+   </div>
+
+   <div id="negro">
+   <button type="button"  href="" id="flato-dark-button" onclick="apagarPrender('enojo')">Enojo</button>
+   </div>
+
+   <div id="azul">
+    <button type="button"  href="" id="flato-blue-button" onclick="apagarPrender('feliz')">feliz</button>
+   </div>
+
+   <div id="turquesa">
+    <button type="button"  href="" id="flato-tirquoise-button" onclick="apagarPrender('ira')">Ira </button>
+   </div>
+
+   <div id="verde">
+      <button type="button"  href="" id="flato-green-button" onclick="apagarPrender('miedo')">Miedo</button>
+   </div>
+
+     <div id="amarillo">
+      <button type="button"  href="" id="flato-yellow-button" onclick="apagarPrender('envidia')">Envidia</button>
+   </div>
+
+     <div id="gris">
+      <button type="button"  href="" id="flato-gray-button" onclick="apagarPrender('culpa')">Culpa</button>
+   </div>
+
+
+   </div>
+   
+
+<audio id="feliz" src="sound/feliz.mp3"  autobuffer></audio>
+<audio id="miedo" src="sound/miedo.mp3"  autobuffer></audio>
+<audio id="ira" src="sound/ira.mp3"  autobuffer></audio>
+<audio id="triste" src="sound/triste.mp3"  autobuffer></audio>
+<audio id="envidia" src="sound/envidia.mp3"  autobuffer></audio>
+<audio id="enojo" src="sound/enojo.mp3"  autobuffer></audio>
+<audio id="dolor" src="sound/dolor.mp3"  autobuffer></audio>
+<audio id="culpa" src="sound/culpa.mp3"  autobuffer></audio>
+<audio id="amor" src="sound/amor.mp3"  autobuffer></audio>
+<embed src="sound/fondo1.mp3" hidden="true" PLAYCOUNT="3">
+
+</body>
+</html> 
