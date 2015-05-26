@@ -14,13 +14,13 @@ import time
 def index(request):
     #person = Person(name = "Uriel")
     #person.save()
-    #alert = AlertType(
-    #	title = "Hola, Como estas?",
-    #	type_id = 1,
+    alert = AplicationData(
+    	alert_count = 1,
+    	alert_type_count = 1,
     #	img = "foot.png",
     #	sound = "saludo.mp3"
-    #)
-    #alert.save()
+    )
+    alert.save()
     #path = settings.MEDIA_ROOT
     #audio_extract(input_text=alert.title, args = {'language':'es','output':path+'/audio/saludo.mp3'})
     return render_to_response('index.html', RequestContext(request, {}))
