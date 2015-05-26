@@ -2,7 +2,9 @@ media/bower_components
 media/components
 *.DS_Store
 *.pyc
-*.mp3
-*.png
+media/audio
+media/img/75x75
+media/img/original
+media/img/thumbnail
 *.jpeg
 *.jpg

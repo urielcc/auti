@@ -46,6 +46,10 @@ angular.module('auti.menu', ['ngRoute'])
               $global.add("alert", data);
 			        ngToast.create(mensaje.getContenido());
               $scope.mensajePendiente = true;
+              $scope.animar();
+              var audio = new Audio('/media/nuevo_mensaje.mp3');
+              audio.play();
+              
             }else{
               $scope.tid = setTimeout($scope.updateAlert, 5000);
             }
@@ -66,5 +70,34 @@ angular.module('auti.menu', ['ngRoute'])
   $scope.tid = setTimeout($scope.updateAlert, 1000);
 	//$scope.updateAlert();
 	$scope.loadTiles();
+
+  $scope.foto = "robot_1.png";
+  $scope.contador = 1;
+
+  $scope.animar = function(){
+    var sprite1 = "robot_1.png";
+    var sprite2 = "robot_2.png";
+    if($scope.contador >= 2)
+    $scope.$apply(function () {
+      if($scope.foto =="robot_1.png"){
+        $scope.foto = sprite2;
+      }else{
+        $scope.foto = sprite1;
+      }
+    });
+
+    $scope.contador ++;
+    if($scope.contador >= 8){
+      $scope.contador = 1;
+       $scope.foto = sprite1;
+    }else{
+      setTimeout($scope.animar, 300);
+    }
+
+  };
+
+  $scope.anim = function(){
+    $scope.animar();
+  };
 	
 });
