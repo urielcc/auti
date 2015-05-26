@@ -73,10 +73,12 @@ angular.module('auti.menu', ['ngRoute'])
 
   $scope.foto = "robot_1.png";
   $scope.contador = 1;
+  $scope.mensaje = "Enviar mensaje";
 
   $scope.animar = function(){
     var sprite1 = "robot_1.png";
     var sprite2 = "robot_2.png";
+    var sprite3 = "robot_3.png";
     if($scope.contador >= 2)
     $scope.$apply(function () {
       if($scope.foto =="robot_1.png"){
@@ -89,7 +91,8 @@ angular.module('auti.menu', ['ngRoute'])
     $scope.contador ++;
     if($scope.contador >= 8){
       $scope.contador = 1;
-       $scope.foto = sprite1;
+       $scope.foto = sprite3;
+       $scope.mensaje = "Leer mensaje"
     }else{
       setTimeout($scope.animar, 300);
     }
