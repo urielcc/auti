@@ -1,0 +1,14 @@
+#contenerdor{
+	height: 600px;
+	width: 450px;
+	position: relative;
+	margin: 50px;
+	left: 620px;
+
+}
+#canvas{
+	height: 600px;
+	width:  800px;
+}
+
+

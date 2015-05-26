@@ -1,15 +1,18 @@
-.my-alert{
+.my-alert2{
   overflow: hidden;
 }
-.my-alert img{
+.my-alert2 img{
   display: block;
   margin: 20px auto;
   max-width: 20%;
 }
-.my-alert p{
+.my-alert2 p{
   text-align: center;
   font-size: 40px;
   margin: 30px 0;  
+}
+.game1{
+  height: 1000px !important;
 }
 .btn-option{
   display: block;
@@ -20,5 +23,186 @@
 font-size: 24px;
 }
 .my-alert-answer{
-  margin: 50px 0; 
+  
+}
+
+
+#container{
+  height:400px;
+  width:100%;
+  margin: 50px auto;
+  position:relative;
+  bottom: 50px;
+    border-radius:4px;
+  
+}
+
+.vaca{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+.tigre{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 165px;
+  top: 3px;
+  
+
+}
+.conejo{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 330px;
+  top: -96px;
+  
+
+}
+.mono{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 500px;
+  top: -199px;
+  
+}
+.serpiente{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -150
+
+
+}
+.caballo{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -250;
+  left: 165px;
+}
+.borrego{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 330px;
+    top: -350px;
+
+}
+.raton{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 500px;
+  top: -450px;
+  
+}
+.jabali{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 400px;
+  left: 10px;
+
+
+}
+.perrito{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 495px;
+  left: 165px;
+
+}
+.pollito{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 595px;
+  left: 330px;
+
+
+}
+.dragon{
+  
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 695px;
+  left: 500px;
+}       
+#slider {
+  height:400px;
+  width:100%;
+  margin: 50px auto;
+  position:relative;
+  border-radius:4px;
+  overflow:hidden;
+  }
+#slider1 {
+  height:400px;
+  width:100%;
+  margin: 50px auto;
+  position:relative;
+  border-radius:4px;
+  overflow:hidden;
+}
+#image {
+  height:400px;
+  width:100%;
+  position:absolute;
+  }
+#image1 {
+  height:400px;
+  width:100%;
+  position:absolute;
+  } 
+.left_hold {
+  height: 400px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.right_hold {
+  height: 400px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.left {
+  height:50px;
+  width:50px;
+  position:absolute;
+  top:40%;
+  left:20px;
+  opacity:0;
+  transition: all .2s ease-in-out 0s;
+  }
+.right {
+  height:50px;
+  width:50px;
+  position:absolute;
+  top:40%;
+  right:20px;
+  opacity:0;
+  transition: all .5s ease-in-out 0s;
+  }
+.left_hold:hover .left {
+  opacity:0.6;
+  }
+.right_hold:hover .right {
+  opacity:0.6;
+}
+.exit-game{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
 }

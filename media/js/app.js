@@ -7,6 +7,7 @@ var autoApp = angular.module('auti', [
   'auti.menu',
   'auti.alert',
   'auti.mensaje',
+  'auti.game1',
   'ngToast'
 ]);
 
