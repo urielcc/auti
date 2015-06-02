@@ -105,4 +105,11 @@ $ python connect.py
 `show collection`
 
 
+##Licencia
 
+####GNU GENERAL PUBLIC LICENSE
+#####Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. http://fsf.org/ Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+Creada por la Free Software Foundation como parte del proyecto GNU, es una de la más populares y utilizadas en la comunidad. Exige la publicación del código fuente y que todos los trabajos derivados del original conserven la misma licencia GPL, no permite enlaces con módulos privativos (de código cerrado) y requiere que todos los cambios realizados a la versión original sean reflejados en el código fuente con sus respectivos autores. Además posee ventajas únicas respecto a otras licencias como protección contra la tivoización y protección contra las leyes de DRM. Los derechos de autor deben conservarse tanto en el código fuente como en los binarios.
