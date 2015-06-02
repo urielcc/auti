@@ -1,0 +1,797 @@
+
+	
+/* Use the Following CSS Code for a Red Button*/
+#flato-red-button {
+	padding: 18px 50px;
+	background-color: #e4644b;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #de5440;
+	-webkit-box-shadow: 0px 2px 0px 0px #de5440;
+	box-shadow: 0px 2px 0px 0px #de5440;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #f7f1e3;
+	font-smooth: always; 
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-red-button:visited {
+	background-color: #e4644b;
+	color: #f7f1e3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #de5440;
+	-webkit-box-shadow: 0px 2px 0px 0px #de5440;
+	box-shadow: 0px 2px 0px 0px #de5440;
+	}
+	
+#flato-red-button:hover {
+	background-color: #f78d6d;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #ef7e61;
+	-webkit-box-shadow: 0px 2px 0px 0px #ef7e61;
+	box-shadow: 0px 2px 0px 0px #ef7e61;
+	color: #facbbc;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-red-button:active {
+	background-color: #d95b46;
+	color: #ebada3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #ce513e;
+	-webkit-box-shadow: 0px 2px 0px 0px #ce513e;
+	box-shadow: 0px 2px 0px 0px #ce513e;
+	}
+	
+#flato-red-button-disabled {
+	padding: 11px 20px;
+	background-color: #f6b4a0;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #f6b4a0;
+	-webkit-box-shadow: 0px 2px 0px 0px #f6b4a0;
+	box-shadow: 0px 2px 0px 0px #f6b4a0;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #f7d5ca;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+/* Use the Following CSS Code for a Pink Button*/
+#flato-pink-button {
+	padding: 18px 50px;
+	background-color: #e75d66;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #d34b57;
+	-webkit-box-shadow: 0px 2px 0px 0px #d34b57;
+	box-shadow: 0px 2px 0px 0px #d34b57;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #f7e3e6;
+	font-smooth: always; 
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-pink-button:visited {
+	background-color: #e75d66;
+	color: #f7e3e6;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #d34b57;
+	-webkit-box-shadow: 0px 2px 0px 0px #d34b57;
+	box-shadow: 0px 2px 0px 0px #d34b57;
+	}
+	
+#flato-pink-button:hover {
+	background-color: #f28794;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #eb7685;
+	-webkit-box-shadow: 0px 2px 0px 0px #eb7685;
+	box-shadow: 0px 2px 0px 0px #eb7685;
+	color: #f7c2c8;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-pink-button:active {
+	background-color: #cf545c;
+	color: #e3a4a8;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #ca4e57;
+	-webkit-box-shadow: 0px 2px 0px 0px #ca4e57;
+	box-shadow: 0px 2px 0px 0px #ca4e57;
+	}
+	
+#flato-pink-button-disabled {
+	padding: 11px 20px;
+	background-color: #f0b2b9;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #f0b2b9;
+	-webkit-box-shadow: 0px 2px 0px 0px #f0b2b9;
+	box-shadow: 0px 2px 0px 0px #f0b2b9;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #f0b2b9;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+	/* Use the Following CSS Code for a Dark Blue Button*/
+#flato-dark-button {
+	padding: 18px 50px;
+	background-color: #425b71;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #344c60;
+	-webkit-box-shadow: 0px 2px 0px 0px #344c60;
+	box-shadow: 0px 2px 0px 0px #344c60;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #e3f0f7;
+	font-smooth: always; 
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-dark-button:visited {
+	background-color: #425b71;
+	color: #e3f0f7;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #344c60;
+	-webkit-box-shadow: 0px 2px 0px 0px #344c60;
+	box-shadow: 0px 2px 0px 0px #344c60;
+	}
+	
+#flato-dark-button:hover {
+	background-color: #556c7f;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #4c6376;
+	-webkit-box-shadow: 0px 2px 0px 0px #4c6376;
+	box-shadow: 0px 2px 0px 0px #4c6376;
+	color: #d3d9df;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-dark-button:active {
+	background-color: #35495a;
+	color: #aab7c3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #2d4152;
+	-webkit-box-shadow: 0px 2px 0px 0px #2d4152;
+	box-shadow: 0px 2px 0px 0px #2d4152;
+	}
+	
+#flato-dark-button-disabled {
+	padding: 11px 20px;
+	background-color: #a6adb3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #a6adb3;
+	-webkit-box-shadow: 0px 2px 0px 0px #a6adb3;
+	box-shadow: 0px 2px 0px 0px #a6adb3;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #d3dbe2;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+
+	/* Use the Following CSS Code for a Blue Button*/
+#flato-blue-button {
+	padding: 18px 50px;
+	background-color: #3bbce0;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #12a7cb;
+	-webkit-box-shadow: 0px 2px 0px 0px #12a7cb;
+	box-shadow: 0px 2px 0px 0px #12a7cb;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #e3f6f7;
+	font-smooth: always; 
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-blue-button:visited {
+	background-color: #3bbce0;
+	color: #e3f6f7;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #12a7cb;
+	-webkit-box-shadow: 0px 2px 0px 0px #12a7cb;
+	box-shadow: 0px 2px 0px 0px #12a7cb;
+	}
+	
+#flato-blue-button:hover {
+	background-color: #53d7ec;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #31cee4;
+	-webkit-box-shadow: 0px 2px 0px 0px #31cee4;
+	box-shadow: 0px 2px 0px 0px #31cee4;
+	color: #ccf5fb;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-blue-button:active {
+	background-color: #38b2d5;
+	color: #aadeed;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #21a5c7;
+	-webkit-box-shadow: 0px 2px 0px 0px #21a5c7;
+	box-shadow: 0px 2px 0px 0px #21a5c7;
+	}
+	
+#flato-blue-button-disabled {
+	padding: 11px 20px;
+	background-color: #95e0ec;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #95e0ec;
+	-webkit-box-shadow: 0px 2px 0px 0px #95e0ec;
+	box-shadow: 0px 2px 0px 0px #95e0ec;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #ccf5fb;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+/* Use the Following CSS Code for a Tirquoise Button*/
+#flato-tirquoise-button {
+	padding: 18px 50px;
+	background-color: #00c5ad;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #00ab94;
+	-webkit-box-shadow: 0px 2px 0px 0px #00ab94;
+	box-shadow: 0px 2px 0px 0px #00ab94;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #e3f7f2;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-tirquoise-button:visited {
+	background-color: #00c5ad;
+	color: #e3f7f2;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #00ab94;
+	-webkit-box-shadow: 0px 2px 0px 0px #00ab94;
+	box-shadow: 0px 2px 0px 0px #00ab94;
+	}
+	
+#flato-tirquoise-button:hover {
+	background-color: #73dfd2;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #73d6c9;
+	-webkit-box-shadow: 0px 2px 0px 0px #73d6c9;
+	box-shadow: 0px 2px 0px 0px #73d6c9;
+	color: #d7f8f4;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-tirquoise-button:active {
+	background-color: #00b19b;
+	color: #a6e8e0;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #00a28c;
+	-webkit-box-shadow: 0px 2px 0px 0px #00a28c;
+	box-shadow: 0px 2px 0px 0px #00a28c;
+	}
+	
+#flato-tirquoise-button-disabled {
+	padding: 11px 20px;
+	background-color: #a3e0d9;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #a3e0d9;
+	-webkit-box-shadow: 0px 2px 0px 0px #a3e0d9;
+	box-shadow: 0px 2px 0px 0px #a3e0d9;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #d7f8f4;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+/* Use the Following CSS Code for a Green Button*/
+#flato-green-button {
+	padding: 18px 50px;
+	background-color: #99ca6a;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #8abc5d;
+	-webkit-box-shadow: 0px 2px 0px 0px #8abc5d;
+	box-shadow: 0px 2px 0px 0px #8abc5d;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #eaf7e3;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-green-button:visited {
+	background-color: #99ca6a;
+	color: #eaf7e3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #8abc5d;
+	-webkit-box-shadow: 0px 2px 0px 0px #8abc5d;
+	box-shadow: 0px 2px 0px 0px #8abc5d;
+	}
+	
+#flato-green-button:hover {
+	background-color: #c7e29a;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #c2dd8e;
+	-webkit-box-shadow: 0px 2px 0px 0px #c2dd8e;
+	box-shadow: 0px 2px 0px 0px #c2dd8e;
+	color: #e8f7ce;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-green-button:active {
+	background-color: #91c065;
+	color: #bae294;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #88b75d;
+	-webkit-box-shadow: 0px 2px 0px 0px #88b75d;
+	box-shadow: 0px 2px 0px 0px #88b75d;
+	}
+	
+#flato-green-button-disabled {
+	padding: 11px 20px;
+	background-color: #d4e1bf;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #d4e1bf;
+	-webkit-box-shadow: 0px 2px 0px 0px #d4e1bf;
+	box-shadow: 0px 2px 0px 0px #d4e1bf;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #e8f7ce;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+/* Use the Following CSS Code for a Green Button*/
+#flato-green-button {
+	padding: 18px 50px;
+	background-color: #99ca6a;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #8abc5d;
+	-webkit-box-shadow: 0px 2px 0px 0px #8abc5d;
+	box-shadow: 0px 2px 0px 0px #8abc5d;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #eaf7e3;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-green-button:visited {
+	background-color: #99ca6a;
+	color: #eaf7e3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #8abc5d;
+	-webkit-box-shadow: 0px 2px 0px 0px #8abc5d;
+	box-shadow: 0px 2px 0px 0px #8abc5d;
+	}
+	
+#flato-green-button:hover {
+	background-color: #c7e29a;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #c2dd8e;
+	-webkit-box-shadow: 0px 2px 0px 0px #c2dd8e;
+	box-shadow: 0px 2px 0px 0px #c2dd8e;
+	color: #e8f7ce;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-green-button:active {
+	background-color: #91c065;
+	color: #bae294;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #88b75d;
+	-webkit-box-shadow: 0px 2px 0px 0px #88b75d;
+	box-shadow: 0px 2px 0px 0px #88b75d;
+	}
+	
+#flato-green-button-disabled {
+	padding: 11px 20px;
+	background-color: #d4e1bf;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #d4e1bf;
+	-webkit-box-shadow: 0px 2px 0px 0px #d4e1bf;
+	box-shadow: 0px 2px 0px 0px #d4e1bf;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #e8f7ce;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+/* Use the Following CSS Code for a Yellow Button*/
+#flato-yellow-button {
+	padding: 18px 50px;
+	background-color: #fac75b;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #ecbb4f;
+	-webkit-box-shadow: 0px 2px 0px 0px #ecbb4f;
+	box-shadow: 0px 2px 0px 0px #ecbb4f;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #f7f7e3;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-yellow-button:visited {
+	background-color: #fac75b;
+	color: #f7f7e3;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #ecbb4f;
+	-webkit-box-shadow: 0px 2px 0px 0px #ecbb4f;
+	box-shadow: 0px 2px 0px 0px #ecbb4f;
+	}
+	
+#flato-yellow-button:hover {
+	background-color: #fce084;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #f7dc78;
+	-webkit-box-shadow: 0px 2px 0px 0px #f7dc78;
+	box-shadow: 0px 2px 0px 0px #f7dc78;
+	color: #fef5d7;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-yellow-button:active {
+	background-color: #edbd56;
+	color: #f4ddaa;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #e5b54f;
+	-webkit-box-shadow: 0px 2px 0px 0px #e5b54f;
+	box-shadow: 0px 2px 0px 0px #e5b54f;
+	}
+	
+#flato-yellow-button-disabled {
+	padding: 11px 20px;
+	background-color: #fbecb9;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #fbecb9;
+	-webkit-box-shadow: 0px 2px 0px 0px #fbecb9;
+	box-shadow: 0px 2px 0px 0px #fbecb9;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #faf7ee;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+/* Use the Following CSS Code for a Gray Button*/
+#flato-gray-button {
+	padding: 18px 50px;
+	background-color: #c9ced1;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #bec2c4;
+	-webkit-box-shadow: 0px 2px 0px 0px #bec2c4;
+	box-shadow: 0px 2px 0px 0px #bec2c4;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}
+	
+#flato-gray-button:visited {
+	background-color: #c9ced1;
+	color: #ffffff;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #bec2c4;
+	-webkit-box-shadow: 0px 2px 0px 0px #bec2c4;
+	box-shadow: 0px 2px 0px 0px #bec2c4;
+	}
+	
+#flato-gray-button:hover {
+	background-color: #e1e4e6;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #dddfe1;
+	-webkit-box-shadow: 0px 2px 0px 0px #dddfe1;
+	box-shadow: 0px 2px 0px 0px #dddfe1;
+	color: #f9f9f9;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	}
+	
+#flato-gray-button:active {
+	background-color: #b5b9bc;
+	color: #dfdfdf;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #adb1b5;
+	-webkit-box-shadow: 0px 2px 0px 0px #adb1b5;
+	box-shadow: 0px 2px 0px 0px #adb1b5;
+	}
+	
+#flato-gray-button-disabled {
+	padding: 11px 20px;
+	background-color: #eaedee;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 0px 0px #eaedee;
+	-webkit-box-shadow: 0px 2px 0px 0px #eaedee;
+	box-shadow: 0px 2px 0px 0px #eaedee;
+	line-height: 100%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #f7f7f7;
+	display: inline-block;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	outline: none;
+	behavior: url(PIE.htc);
+	}

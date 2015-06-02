@@ -1,0 +1,52 @@
+<html>
+<head><title>SlideShow</title>
+	<link href="css/style_slide.css" rel="stylesheet" type="text/css">
+	<script src="js/slide.js"></script>
+	<script src="js/sound.js"></script>
+
+</head>
+<body >
+
+<div id="slider">
+<img src="images/img1.jpg" id="image"/>
+<div class="left_hold"><img onClick="Show(-1)" class="left" src="images/back.png"></div>
+<div class="right_hold"><img onClick="Show(1)" class="right" src="images/next.png"></div>
+</div>
+
+<div id="container">
+	<div class="vaca"><img onClick="EvalSound('_vaca')" src="images/vaca.png"></div>
+	<div class="tigre"><img onClick="EvalSound('_tigre')" src="images/tigre.png"></div>
+	<div class="conejo"><img onClick="EvalSound('_conejo')" src="images/conejo.png"></div>
+	<div class="mono"><img onClick="EvalSound('_mono')" src="images/changito.png"></div>
+	<div class="serpiente"><img onClick="EvalSound('_serpiente')" src="images/serpiente.png"></div>
+	<div class="caballo"><img onClick="EvalSound('_caballo')" src="images/caballo.png"></div>
+	<div class="borrego"><img onClick="EvalSound('_borrego')" src="images/borrego.png"></div>
+	<div class="raton"><img onClick="EvalSound('_raton')" src="images/mouse.png"></div>
+	<div class="jabali"><img onClick="EvalSound('_jabali')" src="images/jabali.png"></div>
+	<div class="perrito"><img onClick="EvalSound('_perrito')" src="images/perrito.png"></div>
+	<div class="pollito"><img onClick="EvalSound('_pollito')" src="images/pollito.png"></div>
+	<div class="dragon"><img onClick="EvalSound('_dragon')" src="images/dragon.png"></div>
+
+
+
+</div>
+
+
+<audio id="_vaca" src="sound/vacabien.mp3"  autobuffer></audio>
+<audio id="_tigre" src="sound/tigrebien.mp3"  autobuffer></audio>
+<audio id="_conejo" src="sound/conejobien.mp3"  autobuffer></audio>
+<audio id="_mono" src="sound/mono.mp3"  autobuffer></audio>
+<audio id="_serpiente" src="sound/serpiente.mp3"  autobuffer></audio>
+<audio id="_caballo" src="sound/canallo.mp3"  autobuffer></audio>
+<audio id="_borrego" src="sound/cordero.mp3"  autobuffer></audio>
+<audio id="_raton" src="sound/ratonsito.mp3"  autobuffer></audio>
+<audio id="_jabali" src="sound/jabali.mp3"  autobuffer></audio>
+<audio id="_perrito" src="sound/perrito.mp3"  autobuffer></audio>
+<audio id="_pollito" src="sound/pollitobien.mp3"  autobuffer></audio>
+<audio id="_dragon" src="sound/dragon.mp3"  autobuffer></audio>
+
+
+
+<embed src="sound/fondo2.mp3" hidden="true" PLAYCOUNT="3">
+</body>
+</html>

@@ -1,0 +1,17 @@
+button{
+	float: left;
+	margin: 10px 20px;
+}
+#contorno{
+	height:800px;
+	width:800px;
+	position:relative;
+	left: 850px;
+	top: 200px;
+	border-radius:4px;
+    
+
+}
+
+
+

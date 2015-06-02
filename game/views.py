@@ -14,9 +14,9 @@ import time
 def index(request):
     #person = Person(name = "Uriel")
     #person.save()
-    #alert = AlertType(
-    #	title = "Hola, Como estas?",
-    #	type_id = 1,
+    #alert = AplicationData(
+    #	alert_count = 1,
+    #	alert_type_count = 1,
     #	img = "foot.png",
     #	sound = "saludo.mp3"
     #)

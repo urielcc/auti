@@ -3,7 +3,7 @@
 angular.module('auti.checkAnswers', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/report', {
+  $routeProvider.when('/', {
     templateUrl: '/media/views/checkAnswers/checkAnswers.html',
     controller: 'reportCtrl'
   });

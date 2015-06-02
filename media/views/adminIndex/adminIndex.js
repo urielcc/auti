@@ -3,7 +3,7 @@
 angular.module('auti.adminIndex', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {
+  $routeProvider.when('/delete', {
     templateUrl: '/media/views/adminIndex/adminIndex.html',
     controller: 'adminCtrl'
   });
