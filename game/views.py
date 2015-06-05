@@ -32,6 +32,7 @@ def admin(request):
 def checkAlert(request):
 	
 	data = json.loads(request.body)
+	print data
 	alertData = Alert.objects(is_active = True).first()
 	if(alertData):
 		alert = AlertType.objects(type_id = alertData.type_id).first()
